@@ -1,21 +1,35 @@
 package com.example.finalproject;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainPage {
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
-    private String signup;
-    private String login;
-
-    public void SignUp(ActionEvent event){
-        System.out.println("Sign Up");
+    public void SignUp(ActionEvent signup) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
+        stage = (Stage)((Node)signup.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public void Login(ActionEvent event){
-        System.out.println("Login");
-
+    public void Login(ActionEvent signup1) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        stage = (Stage)((Node)signup1.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
+
 
 
 }
