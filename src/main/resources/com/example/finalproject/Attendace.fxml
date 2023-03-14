@@ -21,7 +21,7 @@
             <Image url="@../../../../Pictures/Saved%20Pictures/CADT.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="158.0" layoutY="14.0" text="Check Your Attendance" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="-158.0">
+      <Label layoutX="158.0" layoutY="14.0" text="Check your Attendance" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="-158.0">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
