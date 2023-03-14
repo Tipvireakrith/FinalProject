@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #13284c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.MainPage">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #13284c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.SwithScence">
    <children>
       <Button layoutX="250.0" layoutY="176.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="36.0" prefWidth="96.0" text="Sign up">
          <font>
@@ -22,7 +22,7 @@
       <Hyperlink layoutX="14.0" layoutY="362.0" text="https://www.facebook.com/CADT.Academy" />
       <ImageView fitHeight="99.0" fitWidth="588.0" layoutX="15.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Cadt%20LOGO.jpg" />
+            <Image url="@Cadt LOGO.jpg" />
          </image>
       </ImageView>
    </children>
