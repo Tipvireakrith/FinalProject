@@ -19,6 +19,7 @@ public class MainPage {
         stage = (Stage)((Node)signup.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Sing Up");
         stage.show();
     }
 
@@ -27,8 +28,19 @@ public class MainPage {
         stage = (Stage)((Node)signup1.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Login");
         stage.show();
     }
+
+    public void MainMenu(ActionEvent signup1) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
+        stage = (Stage)((Node)signup1.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Menu");
+        stage.show();
+    }
+
 
 
 
