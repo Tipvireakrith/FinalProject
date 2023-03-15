@@ -65,14 +65,38 @@ public class SwithScence {
         stage.show();
     }
 
+
     @FXML
     private Button check;
     @FXML
     void check(ActionEvent event) throws IOException{
         System.out.println("Check button");
-
         Parent root = FXMLLoader.load(getClass().getResource("Attendace.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Menu");
+        stage.show();
+
+    }
+
+
+public void CheckName (ActionEvent checkname) throws IOException{
+
+    Parent root = FXMLLoader.load(getClass().getResource("History.fxml"));
+    stage = (Stage) ((Node) checkname.getSource()).getScene().getWindow();
+    scene = new Scene(root);
+    stage.setScene(scene);
+    stage.setTitle("Menu");
+    stage.show();
+
+}
+
+
+    public void back (ActionEvent back) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
+        stage = (Stage) ((Node) back.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Menu");
