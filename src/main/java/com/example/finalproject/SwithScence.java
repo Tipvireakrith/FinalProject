@@ -50,4 +50,35 @@ public class SwithScence {
         stage.setTitle("Menu");
         stage.show();
     }
+
+
+    @FXML
+    private Button CreateAccount;
+    @FXML
+    void Create(ActionEvent event) throws IOException{
+        System.out.println("Goto");
+        Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Menu");
+        stage.show();
+    }
+
+    @FXML
+    private Button check;
+    @FXML
+    void check(ActionEvent event) throws IOException{
+        System.out.println("Check button");
+
+        Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Menu");
+        stage.show();
+
+    }
+
+
 }
