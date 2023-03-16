@@ -71,15 +71,14 @@ public class SwithScence {
     private Button check;
 
     @FXML
-    void check(ActionEvent event) throws IOException {
+    public void check(ActionEvent CheckAttendance) throws IOException{
         System.out.println("Check button");
         Parent root = FXMLLoader.load(getClass().getResource("Attendance.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) CheckAttendance.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Check Attendance");
+        stage.setTitle("Attendance Check");
         stage.show();
-
     }
 
 
