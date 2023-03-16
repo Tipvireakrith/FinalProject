@@ -75,7 +75,7 @@ public class SwithScence {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Menu");
+        stage.setTitle("Check Attendance");
         stage.show();
 
     }
@@ -97,6 +97,14 @@ public class SwithScence {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("AboutUs");
+        stage.show();
+    }
+    public void submit (ActionEvent submit) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("WellDone.fxml"));
+        stage = (Stage) ((Node) submit.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Your attendance have been checked!");
         stage.show();
     }
     public void back (ActionEvent back) throws IOException{
