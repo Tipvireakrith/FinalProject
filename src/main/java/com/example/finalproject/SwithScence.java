@@ -110,6 +110,16 @@ public class SwithScence {
         stage.setTitle("Your attendance have been checked!");
         stage.show();
     }
+    @FXML
+    private Button btncancel;
+    public void cancel(ActionEvent cancel) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
+        stage = (Stage) ((Node) cancel.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Menu");
+        stage.show();
+    }
 
     public void back(ActionEvent back) throws IOException {
 
