@@ -96,7 +96,7 @@ public void aboutUs (ActionEvent Aboutus) throws IOException{
     stage = (Stage) ((Node) Aboutus.getSource()).getScene().getWindow();
     scene = new Scene(root);
     stage.setScene(scene);
-    stage.setTitle("History");
+    stage.setTitle("AboutUs");
     stage.show();
 }
 
