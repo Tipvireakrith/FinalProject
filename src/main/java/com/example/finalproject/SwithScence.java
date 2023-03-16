@@ -92,7 +92,7 @@ public class SwithScence {
 
     }
     public void aboutUs (ActionEvent Aboutus) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("About Us.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("AboutUs.fxml"));
         stage = (Stage) ((Node) Aboutus.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
