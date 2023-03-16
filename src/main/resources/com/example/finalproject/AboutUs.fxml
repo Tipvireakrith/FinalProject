@@ -13,7 +13,7 @@
     <children>
         <Pane layoutX="276.0" prefHeight="400.0" prefWidth="331.0">
             <children>
-                <TextArea layoutX="22.0" layoutY="130.0" prefHeight="196.0" prefWidth="288.0" text="&#10;Lecturer: Try Vitou&#10;Our Team Members&#10;- Kim Titvireak Rith&#10;- Meng Sopharita&#10;- Chy Vattey&#10;&#9;We study in Year2 at CADT. In this term &#10;we have OOP final project talk about Attendance &#10;Record System.  &#10;" />
+                <TextArea layoutX="22.0" layoutY="130.0" prefHeight="196.0" prefWidth="288.0" text="&#10;Lecturer: Try Vitou&#10;Our Team Members&#10;- Kim Titvireak Rith&#10;- Meng Thysopharita&#10;- Chy Vattey&#10;&#9;We study in Year2 at CADT. In this term &#10;we have OOP final project talk about Attendance &#10;Record System.  &#10;" />
                 <ImageView fitHeight="38.0" fitWidth="288.0" layoutX="22.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@cadt%20logo%20banner.png" />
