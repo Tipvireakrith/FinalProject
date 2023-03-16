@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.SwithScence">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.SwithScence">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.48" pickOnBounds="true">
          <image>
             <Image url="@Cadt bakcground.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="submitButton" layoutX="147.0" layoutY="334.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="288.0" style="-fx-background-color: orange;" text="Submit" textFill="WHITE">
+      <Button fx:id="btnsubmit" layoutX="147.0" layoutY="334.0" mnemonicParsing="false" onAction="#submit" prefHeight="52.0" prefWidth="288.0" style="-fx-background-color: orange;" text="Submit" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>

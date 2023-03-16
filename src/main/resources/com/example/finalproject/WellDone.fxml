@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.SwithScence">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="756.0" layoutX="-74.0" opacity="0.51" pickOnBounds="true">
+         <image>
+            <Image url="@Well.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="33.0" style="-fx-background-color: white;" text="Your Attendance Are Checked!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="191.0" fitWidth="199.0" layoutX="202.0" layoutY="105.0" opacity="0.96" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Attendance.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
