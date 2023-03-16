@@ -81,18 +81,24 @@ public class SwithScence {
     }
 
 
-public void CheckName (ActionEvent checkname) throws IOException{
+    public void CheckName (ActionEvent checkname) throws IOException{
 
-    Parent root = FXMLLoader.load(getClass().getResource("History.fxml"));
-    stage = (Stage) ((Node) checkname.getSource()).getScene().getWindow();
-    scene = new Scene(root);
-    stage.setScene(scene);
-    stage.setTitle("Menu");
-    stage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("History.fxml"));
+        stage = (Stage) ((Node) checkname.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("History");
+        stage.show();
 
-}
-
-
+    }
+    public void aboutUs (ActionEvent Aboutus) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("AboutUs.fxml"));
+        stage = (Stage) ((Node) Aboutus.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("AboutUs");
+        stage.show();
+    }
     public void back (ActionEvent back) throws IOException{
 
         Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
