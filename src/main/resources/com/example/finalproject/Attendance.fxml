@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.SwithScence">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.48" pickOnBounds="true">
          <image>
@@ -92,7 +92,6 @@
             </CheckBox>
          </children>
       </GridPane>
-      <Button layoutX="31.0" layoutY="23.0" mnemonicParsing="false" text="&lt;-Back" />
       <Label layoutX="158.0" layoutY="23.0" prefHeight="42.0" prefWidth="283.0" text=" Check Your Attendance">
          <font>
             <Font name="System Bold" size="24.0" />
@@ -101,5 +100,6 @@
             <Insets top="6.0" />
          </padding>
       </Label>
+      <Button fx:id="backbutton" layoutX="36.0" layoutY="39.0" mnemonicParsing="false" onAction="#back" text="Back" />
    </children>
 </AnchorPane>
