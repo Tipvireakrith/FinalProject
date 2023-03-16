@@ -99,7 +99,6 @@ public void aboutUs (ActionEvent Aboutus) throws IOException{
     stage.setTitle("AboutUs");
     stage.show();
 }
-
     public void back (ActionEvent back) throws IOException{
 
         Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
