@@ -57,7 +57,7 @@ public class SwithScence {
     @FXML
     void Create(ActionEvent event) throws IOException{
         System.out.println("Goto");
-        Parent root = FXMLLoader.load(getClass().getResource("MenuButton.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

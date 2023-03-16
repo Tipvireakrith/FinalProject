@@ -5,27 +5,47 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class SignUpController {
-
-    @FXML
-    private TextField username;
-
-    @FXML
-    private PasswordField password;
-
-    @FXML
-    private Label status;
-
-    public void signup() {
-        String usernameText = username.getText();
-        String passwordText = password.getText();
-
-        // Check if the username and password are valid
-        if (usernameText.isEmpty() || passwordText.isEmpty()) {
-            status.setText("Please enter a username and password.");
-        } else { status.setText("Sign up successful!");
-        }
+public class SignUpController{
+    private String  Username;
+    private String  Email;
+    private String Password;
+    private String  Confirmpassword;
+    SignUpController(String Username, String Email, String Password, String Confirmpassword){
+        this.Username = Username;
+        this.Email = Email;
+        this.Password = Password;
+        this.Confirmpassword = Confirmpassword;
     }
 
+    public String getUsername() {
+        return Username;
+    }
 
+    public void setUsername(String username) {
+        Username = username;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public String getConfirmpassword() {
+        return Confirmpassword;
+    }
+
+    public void setConfirmpassword(String confirmpassword) {
+        Confirmpassword = confirmpassword;
+    }
 }
